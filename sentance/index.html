@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Words Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body >
+    <h2>Write a Sentance</h2>
+    <div>
+     <input type="textarea" id="input">
+    </div>
+    <div>
+     <button type="submit" onclick="convert()"> calculate words</button>
+    </div>
+    <div id="result">
+
+    </div>
+    <script>
+     function content(){
+      let ivalue=String ( document.getElementById("input").value)
+      let ovalue=ivalue.length;
+      let result =document.getElementById("result")
+      result.innerHTML=ovalue+"words"
+     }
+    </script>
+</body>
+</html>
